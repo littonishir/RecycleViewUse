@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.master.recycleviewuse.SwipeItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/pic2443" />
+
+        <Button
+            android:id="@+id/btset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/ivset"
+            android:background="@android:color/transparent"
+            android:text="关注"
+            android:textColor="#0F3400" />
+
+        <TextView
+            android:id="@+id/tvset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="12dp"
+            android:text="也不止像泉源,常年送来清凉的慰籍;也不止像险峰，增加你的高度，衬托你的威仪. "
+            android:textColor="#0F3400" />
+
+        <ImageView
+            android:id="@+id/ivset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvset"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@mipmap/logo1" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_delete"
+            android:text="删除"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</com.master.recycleviewuse.SwipeItemLayout>
